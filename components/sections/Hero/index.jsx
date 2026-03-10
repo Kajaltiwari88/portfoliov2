@@ -8,7 +8,7 @@ export default function Hero() {
   const name = "Kajal";
 
   return (
-    <section className="relative h-screen w-full bg-[radial-gradient(ellipse_at_top,#1e1b4b,#000000)] text-white overflow-hidden">
+    <section id="home" className="relative h-screen w-full bg-[radial-gradient(ellipse_at_top,#1e1b4b,#000000)] text-white overflow-hidden">
       <div className="absolute inset-0">
         <Scene />
       </div>
