@@ -16,14 +16,15 @@ export default function Footer() {
         </motion.h2>
 
         <div className="flex justify-center gap-8 mb-10">
-          {["LinkedIn", "GitHub"].map((item) => (
+          {[{"LinkedIn" : "https://www.linkedin.com/in/kajal-indramani-tiwari"}, {"GitHub" : "https://github.com/Kajaltiwari88/"}].map((item) => (
             <motion.a
-              key={item}
-              href="#"
+              key={Object.keys(item)[0]}
+              href={item[Object.keys(item)[0]]}
               whileHover={{ scale: 1.2, color: "#a855f7" }}
               className="cursor-pointer"
+              target="_blank"
             >
-              {item}
+              {Object.keys(item)[0]}
             </motion.a>
           ))}
         </div>
